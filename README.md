@@ -22,6 +22,11 @@ We recommend download IntelliJ IDEA Community Edition to run the software https:
 
 # Maintenance and updates
 Consider to add more exchanges currencies.
+# Clean architecture
+- A class called ApiResponseModel is the model to parse Json data.
+- The class ExchangeRateApiService has to functions: getJsonResponse(String baseCurrency) to get the currencies data and getConversionRate(String baseCurrency, String targetCurrency) to filter the values by a selected base currency.
+- Finally, we have a main class located on ui package to run the software and create a user experience workflow. 
+
 
 # Last notes
 This project was the first challenge for the program ONE - Oracle Next Education. See more on https://www.oracle.com/co/education/oracle-next-education/
